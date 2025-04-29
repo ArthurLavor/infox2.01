@@ -1,8 +1,5 @@
 /*
  * The MIT License
- *
- * Copyright 2021 Professor José de Assis.
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -31,7 +28,7 @@ import java.net.URISyntaxException;
 /**
  * Tela Sobre
  *
- * @author Professor José de Assis
+ * 
  */
 public class TelaSobre extends javax.swing.JFrame {
 
@@ -67,10 +64,8 @@ public class TelaSobre extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        lblLink = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Sobre");
@@ -78,20 +73,9 @@ public class TelaSobre extends javax.swing.JFrame {
 
         jLabel1.setText("Sistema para gestão de serviços - Ver 1.3");
 
-        jLabel2.setText("@author Professor José de Assis");
-
         jLabel3.setText("Sob a licença MIT");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/mit.png"))); // NOI18N
-
-        lblLink.setForeground(java.awt.SystemColor.textHighlight);
-        lblLink.setText("josedeassis.com.br");
-        lblLink.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        lblLink.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblLinkMouseClicked(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -101,10 +85,7 @@ public class TelaSobre extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(lblLink))
+                        .addComponent(jLabel1)
                         .addContainerGap(88, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
@@ -117,30 +98,20 @@ public class TelaSobre extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(lblLink)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addGap(25, 25, 25))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
+                        .addGap(108, 108, 108)
                         .addComponent(jLabel3)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jLabel2.getAccessibleContext().setAccessibleName("@author:  Professor José de Assis");
-
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lblLinkMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLinkMouseClicked
-        link("https://joseassis.com.br");
-    }//GEN-LAST:event_lblLinkMouseClicked
 
     /**
      * @param args the command line arguments
@@ -177,9 +148,7 @@ public class TelaSobre extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel lblLink;
     // End of variables declaration//GEN-END:variables
 }
